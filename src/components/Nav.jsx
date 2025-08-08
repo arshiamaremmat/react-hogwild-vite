@@ -1,18 +1,20 @@
 import React from "react";
-import piggy from "../assets/porco.png";
+import piggy from "../assets/porco.png"; 
 
 const Nav = () => {
-	return (
-		<div className="navWrapper">
-			<span className="headerText">HogWild</span>
-			<div className="TwirlyPig">
-				<img src={piggy} className="App-logo" alt="piggy" />
-			</div>
-			<span className="normalText">
-				A React App for County Fair Hog Fans
-			</span>
-		</div>
-	);
+  return (
+    <div className="ui menu">
+      <div className="header item">
+        <span className="headerText">HogWild</span>
+      </div>
+      <div className="TwirlyPig">
+        <img src={piggy} className="App-logo" alt="A cute pig spinning around in a whimsical way" />
+      </div>
+      <div className="normalText item">A React App for County Fair Hog Fans</div>
+    </div>
+  );
 };
 
 export default Nav;
+
+
